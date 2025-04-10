@@ -1,0 +1,50 @@
+{
+  "name": "@trapar-waves/cli-template",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "email": "admin@rikka.cc",
+    "name": "Rikka",
+    "url": "https://github.com/Muromi-Rikka"
+  },
+  "homepage": "https://github.com/Trapar-waves/cli-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trapar-waves/cli-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Trapar-waves/cli-template/issues"
+  },
+  "keywords": [
+    "react",
+    "fiber",
+    "maplibre",
+    "three",
+    "vis.gl",
+    "deck.gl"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "cli-template": "./bin/run"
+  },
+  "scripts": {
+    "start": "ts-node ./bin/run.ts",
+    "start:node": "node ./bin/run",
+    "build": "tsup-node",
+    "build:watch": "tsup-node --watch"
+  },
+  "dependencies": {
+    "consola": "^3.4.2",
+    "destr": "^2.0.5",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.12.0",
+    "eslint": "^9.24.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
