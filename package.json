@@ -1,7 +1,7 @@
 {
   "name": "@trapar-waves/cli-template",
   "version": "1.0.4",
-  "description": "",
+  "description": "A CLI template with TypeScript, tsup, consola, destr, and picocolors, offering efficient builds, logging, data parsing, and colorful output, with ESLint for quality.",
   "author": {
     "email": "admin@rikka.cc",
     "name": "Rikka",
