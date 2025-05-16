@@ -17,10 +17,14 @@
     "url": "https://github.com/Trapar-waves/cli-template/issues"
   },
   "keywords": [
-    "unjs",
-    "tsup",
     "cli",
-    "template"
+    "template",
+    "typescript",
+    "tsup",
+    "consola",
+    "destr",
+    "picocolors",
+    "eslint"
   ],
   "publishConfig": {
     "access": "public"
