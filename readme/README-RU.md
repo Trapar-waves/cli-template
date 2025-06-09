@@ -5,6 +5,8 @@
 ![лицензия](https://img.shields.io/badge/license-MIT-green)
 ![последний коммит GitHub](https://img.shields.io/github/last-commit/Trapar-waves/cli-template)
 
+[English](../README.md) | [中文](README-CN.md) | [日本語](README-JP.md)
+
 > Шаблон разработки CLI, работающий на современных инструментах, включающий TypeScript, tsup для сборки, consola для логирования и другие ключевые компоненты, чтобы ускорить настройку высококачественных CLI-проектов.
 
 ## ✨ Особенности

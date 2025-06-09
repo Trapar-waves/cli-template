@@ -5,6 +5,8 @@
 ![许可证](https://img.shields.io/badge/license-MIT-green)
 ![GitHub 最后提交](https://img.shields.io/github/last-commit/Trapar-waves/cli-template)
 
+[English](../README.md) | [日本語](README-JP.md) | [Русский](README-RU.md)
+
 > 一个由现代工具驱动的CLI开发模板，集成TypeScript、用于构建的tsup、用于日志记录的consola等核心组件，加速高质量CLI项目的搭建。
 
 ## ✨ 特性

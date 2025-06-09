@@ -5,6 +5,8 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Trapar-waves/cli-template)
 
+[English](../README.md) | [中文](README-CN.md) | [Русский](README-RU.md)
+
 > 現代的なツールと実践に基づいて構築されたCLI開発テンプレートです。TypeScriptサポート、tsupによるビルド、consolaによるロギング、destrによるデータ解析、picocolorsによるターミナルカラー出力、ESLintによるコードチェックなどの機能を統合し、高品質なCLIプロジェクトのセットアップを加速します。
 
 ## ✨ 特徴
