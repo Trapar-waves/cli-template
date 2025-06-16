@@ -5,4 +5,11 @@ export default antfu({
     quotes: "double",
     semi: true,
   },
+  markdown: true,
+  jsonc: true,
+  typescript: true,
+  yaml: true,
+  formatters: {
+    markdown: "prettier",
+  },
 });
