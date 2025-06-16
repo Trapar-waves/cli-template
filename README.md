@@ -84,6 +84,6 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 
 ## 🔗 Links
 
-- **Repository:** [https://github.com/cli-template/Trapar-waves](https://github.com/cli-template/Trapar-waves)
-- **Homepage:** [https://github.com/cli-template/Trapar-waves](https://github.com/cli-template/Trapar-waves)
-- **Issues:** [https://github.com/cli-template/Trapar-waves/issues](https://github.com/cli-template/Trapar-waves/issues)
+- **Repository:** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
+- **Homepage:** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
+- **Issues:** [https://github.com/Trapar-waves/cli-template/issues](https://github.com/Trapar-waves/cli-template/issues)

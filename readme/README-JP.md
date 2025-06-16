@@ -84,6 +84,6 @@ pnpm install
 
 ## 🔗 Links
 
-- **リポジトリ:** [https://github.com/cli-template/Trapar-waves](https://github.com/cli-template/Trapar-waves)
-- **ホームページ:** [https://github.com/cli-template/Trapar-waves](https://github.com/cli-template/Trapar-waves)
-- **イシュー:** [https://github.com/cli-template/Trapar-waves/issues](https://github.com/cli-template/Trapar-waves/issues)
+- **リポジトリ:** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
+- **ホームページ:** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
+- **イシュー:** [https://github.com/Trapar-waves/cli-template/issues](https://github.com/Trapar-waves/cli-template/issues)
