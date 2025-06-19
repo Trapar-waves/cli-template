@@ -36,7 +36,9 @@
     "start": "ts-node ./bin/run.ts",
     "start:node": "node ./bin/run",
     "build": "tsup-node",
-    "build:watch": "tsup-node --watch"
+    "build:watch": "tsup-node --watch",
+    "lint": "eslint . --cache --max-warnings=0 --no-warn-ignored",
+    "prepare": "husky"
   },
   "dependencies": {
     "consola": "^3.4.2",
@@ -47,6 +49,8 @@
     "@antfu/eslint-config": "^4.14.1",
     "eslint": "^9.29.0",
     "eslint-plugin-format": "^1.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
