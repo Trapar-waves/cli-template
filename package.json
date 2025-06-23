@@ -38,7 +38,7 @@
     "build": "tsup-node",
     "build:watch": "tsup-node --watch",
     "lint": "eslint . --cache --max-warnings=0 --no-warn-ignored",
-    "prepare": "husky"
+    "postinstall": "husky"
   },
   "dependencies": {
     "consola": "^3.4.2",
