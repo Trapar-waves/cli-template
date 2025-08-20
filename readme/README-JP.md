@@ -53,19 +53,47 @@ npm -v
 
 ### インストール
 
-スクリプトの実行
+`create-trapar-waves` を使用して新しいプロジェクトの足場を構築する:
 
 ```bash
 pnpm create trapar-waves
 ```
 
-依存関係のインストール
+または、手動でテンプレートをセットアップする場合:
 
+1. リポジトリをクローン:
+   ```bash
+   git clone https://github.com/Trapar-waves/cli-template.git
+   cd cli-template
+   ```
+2. 依存関係をインストール:
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+### 開発
+
+`ts-node` を使用して開発モードで CLI を実行:
 ```bash
-npm install
-yarn install
-pnpm install
+pnpm start
+# or
+npm run start
 ```
+
+### ビルド
+
+`tsup` を使用して本番用 CLI をビルド:
+```bash
+pnpm build
+# or
+npm run build
+```
+
+これにより、コンパイルされた JavaScript が `dist` ディレクトリに出力されます。
 
 ## 🤝 コントリビューション
 
@@ -77,10 +105,16 @@ pnpm install
 4. ブランチにプッシュする（`git push origin feature/amazing-feature`）
 5. Pull Requestを開く
 
+コミットする前に、`pnpm lint` を実行してコードがプロジェクトの linting ルールに準拠していることを確認してください。
+
 ## 👤 Author
 
 - **Rikka:** (admin@rikka.cc)
 - **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+
+## 📄 ライセンス
+
+このプロジェクトは MIT ライセンスの下でライセンスされています - 詳細については [LICENSE](../LICENSE) ファイルを参照してください。
 
 ## 🔗 Links
 

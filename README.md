@@ -53,19 +53,47 @@ npm -v
 
 ### Installation
 
-Run script
+Using `create-trapar-waves` to scaffold a new project:
 
 ```bash
 pnpm create trapar-waves
 ```
 
-Install dependencies
+Or, if you prefer to manually set up the template:
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Trapar-waves/cli-template.git
+   cd cli-template
+   ```
+2. Install dependencies:
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+### Development
+
+To run the CLI in development mode with `ts-node`:
 ```bash
-npm install
-yarn install
-pnpm install
+pnpm start
+# or
+npm run start
 ```
+
+### Building
+
+To build the CLI for production with `tsup`:
+```bash
+pnpm build
+# or
+npm run build
+```
+
+This will output the compiled JavaScript to the `dist` directory.
 
 ## 🤝 Contributing
 
@@ -77,10 +105,16 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+Please ensure your code adheres to the project's linting rules by running `pnpm lint` before committing.
+
 ## 👤 Author
 
 - **Rikka:** (admin@rikka.cc)
 - **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
