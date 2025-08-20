@@ -53,19 +53,47 @@ npm -v
 
 ### 安装步骤
 
-运行脚本
+使用 `create-trapar-waves` 脚手架创建新项目：
 
 ```bash
 pnpm create trapar-waves
 ```
 
-安装依赖
+或者，如果您更喜欢手动设置模板：
 
+1. 克隆仓库：
+   ```bash
+   git clone https://github.com/Trapar-waves/cli-template.git
+   cd cli-template
+   ```
+2. 安装依赖：
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+### 开发
+
+使用 `ts-node` 在开发模式下运行 CLI：
 ```bash
-npm install
-yarn install
-pnpm install
+pnpm start
+# or
+npm run start
 ```
+
+### 构建
+
+使用 `tsup` 构建生产版本的 CLI：
+```bash
+pnpm build
+# or
+npm run build
+```
+
+这会将编译后的 JavaScript 输出到 `dist` 目录。
 
 ## 🤝 贡献指南
 
@@ -77,10 +105,16 @@ pnpm install
 4. 推送到分支（`git push origin feature/amazing-feature`）
 5. 打开Pull Request
 
+请在提交前确保您的代码符合项目的 linting 规则，可以通过运行 `pnpm lint` 来检查。
+
 ## 👤 Author
 
 - **Rikka:** (admin@rikka.cc)
 - **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+
+## 📄 许可证
+
+该项目采用 MIT 许可证授权 - 详见 [LICENSE](../LICENSE) 文件了解详情。
 
 ## 🔗 Links
 
