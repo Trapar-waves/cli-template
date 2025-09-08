@@ -22,7 +22,6 @@ jobs:
       - name: Set node
         uses: actions/setup-node@v5
         with:
-          cache: "pnpm"
           registry-url: https://registry.npmjs.org/
           node-version: lts/*
       - run: npx changelogithub # or changelogithub@0.12 to ensure a stable result
@@ -36,7 +35,6 @@ jobs:
         uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v5
         with:
-          cache: "pnpm"
           node-version: 22.19.0
           registry-url: https://registry.npmjs.org/
       - name: Update npm
