@@ -78,6 +78,7 @@ Or, if you prefer to manually set up the template:
 ### Development
 
 To run the CLI in development mode with `ts-node`:
+
 ```bash
 pnpm start
 # or
@@ -87,6 +88,7 @@ npm run start
 ### Building
 
 To build the CLI for production with `tsup`:
+
 ```bash
 pnpm build
 # or

@@ -78,6 +78,7 @@ pnpm create trapar-waves
 ### 開発
 
 `ts-node` を使用して開発モードで CLI を実行:
+
 ```bash
 pnpm start
 # or
@@ -87,6 +88,7 @@ npm run start
 ### ビルド
 
 `tsup` を使用して本番用 CLI をビルド:
+
 ```bash
 pnpm build
 # or

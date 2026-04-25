@@ -78,6 +78,7 @@ pnpm create trapar-waves
 ### Разработка
 
 Запуск CLI в режиме разработки с помощью `ts-node`:
+
 ```bash
 pnpm start
 # or
@@ -87,6 +88,7 @@ npm run start
 ### Сборка
 
 Сборка CLI для продакшена с помощью `tsup`:
+
 ```bash
 pnpm build
 # or

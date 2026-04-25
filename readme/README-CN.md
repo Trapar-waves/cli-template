@@ -78,6 +78,7 @@ pnpm create trapar-waves
 ### 开发
 
 使用 `ts-node` 在开发模式下运行 CLI：
+
 ```bash
 pnpm start
 # or
@@ -87,6 +88,7 @@ npm run start
 ### 构建
 
 使用 `tsup` 构建生产版本的 CLI：
+
 ```bash
 pnpm build
 # or
