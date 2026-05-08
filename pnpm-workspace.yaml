@@ -4,3 +4,6 @@ trustPolicy: off
 
 onlyBuiltDependencies:
   - esbuild
+
+allowBuilds:
+  esbuild: true
