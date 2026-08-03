@@ -31,7 +31,7 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: ^17.2.0
+        specifier: ^17.3.0
         version: 17.3.0
       ts-node:
         specifier: ^10.9.2
