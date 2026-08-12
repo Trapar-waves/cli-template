@@ -17,8 +17,6 @@
 
 ![Features](../assets/readme/headers/features.svg)
 
-## ✨ 特性
-
 - **CLI 工具链：** 集成 `ts-node`（用于开发时直接执行 TypeScript）和 `tsup`（用于生产级构建），支持从调试到部署的完整工作流。
 - **TypeScript 支持：** 完整的 TypeScript 配置（包括 `tsconfig.json`），提供类型检查和自动补全，确保代码可维护性。
 - **结构化日志：** 通过 `consola` 实现分级日志（info/warn/error）、自定义格式化和上下文感知消息，提升调试效率。
@@ -28,8 +26,6 @@
 - **Git Hooks：** 集成 `husky` 和 `lint-staged`，在提交前自动执行检查。
 
 ![Tech Stack](../assets/readme/headers/tech-stack.svg)
-
-## 💻 技术栈
 
 - **语言：** `TypeScript` — JavaScript 的类型超集，支持静态类型检查和现代语法。
 - **构建工具：** `tsup` — 基于 esbuild 的快速打包工具，支持 ESM、CommonJS 和类型声明输出。
@@ -42,8 +38,6 @@
 查看 [package.json](../package.json) 获取完整的依赖列表。
 
 ![Getting Started](../assets/readme/headers/getting-started.svg)
-
-## 🚀 快速开始
 
 ### 前置条件
 
@@ -72,8 +66,6 @@
 
 ![Project Structure](../assets/readme/headers/project-structure.svg)
 
-## 📁 项目结构
-
 ```
 ├── bin/                  # CLI 入口点
 │   ├── run               # 生产入口脚本
@@ -91,8 +83,6 @@
 
 ![Contributing](../assets/readme/headers/contributing.svg)
 
-## 🤝 贡献
-
 欢迎贡献，非常感谢！请按照以下步骤贡献：
 
 1. Fork 仓库
@@ -102,8 +92,6 @@
 5. 创建 Pull Request
 
 ![License](../assets/readme/headers/license.svg)
-
-## 📄 许可证
 
 MIT License © 2025 Trapar Waves
 

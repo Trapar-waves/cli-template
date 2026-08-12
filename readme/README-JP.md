@@ -17,8 +17,6 @@
 
 ![Features](../assets/readme/headers/features.svg)
 
-## ✨ 特徴
-
 - **CLI ツールチェーン：** `ts-node`（開発時の TypeScript 直接実行用）と `tsup`（プロダクションビルド用）を統合し、デバッグからデプロイまでのフルワークフローをサポート。
 - **TypeScript サポート：** `tsconfig.json` を含む完全な TypeScript 設定。型チェックと自動補完により、コードの保守性を確保。
 - **構造化ログ：** `consola` を使用したレベル付きログ（info/warn/error）、カスタムフォーマット、コンテキスト対応メッセージでデバッグ効率を向上。
@@ -28,8 +26,6 @@
 - **Git Hooks：** `husky` と `lint-staged` を統合し、コミット前チェックを実行。
 
 ![Tech Stack](../assets/readme/headers/tech-stack.svg)
-
-## 💻 技術スタック
 
 - **言語：** `TypeScript` — 静的型チェックとモダンな構文を備えた JavaScript の型付きスーパーセット。
 - **ビルドツール：** `tsup` — esbuild ベースの高速バンドラー。ESM、CommonJS、型宣言出力をサポート。
@@ -42,8 +38,6 @@
 依存関係の完全なリストは [package.json](../package.json) を参照してください。
 
 ![Getting Started](../assets/readme/headers/getting-started.svg)
-
-## 🚀 はじめに
 
 ### 前提条件
 
@@ -72,8 +66,6 @@
 
 ![Project Structure](../assets/readme/headers/project-structure.svg)
 
-## 📁 プロジェクト構造
-
 ```
 ├── bin/                  # CLI エントリーポイント
 │   ├── run               # 本番エントリースクリプト
@@ -91,8 +83,6 @@
 
 ![Contributing](../assets/readme/headers/contributing.svg)
 
-## 🤝 コントリビュート
-
 コントリビュートを歓迎します！以下の手順に従ってコントリビュートしてください：
 
 1. リポジトリをフォーク
@@ -102,8 +92,6 @@
 5. Pull Request を作成
 
 ![License](../assets/readme/headers/license.svg)
-
-## 📄 ライセンス
 
 MIT License © 2025 Trapar Waves
 

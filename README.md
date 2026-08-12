@@ -17,8 +17,6 @@
 
 ![Features](assets/readme/headers/features.svg)
 
-## ✨ Features
-
 - **CLI Toolchain:** Integrates `ts-node` (for direct TypeScript execution during development) and `tsup` (for production-grade builds), supporting the full workflow from debugging to deployment.
 - **TypeScript Support:** Full TypeScript configuration (including `tsconfig.json`) with type checking and auto-completion to ensure code maintainability.
 - **Structured Logging:** Implements leveled logging (info/warn/error), custom formatting, and context-aware messages via `consola` to enhance debugging efficiency.
@@ -28,8 +26,6 @@
 - **Git Hooks:** Integrated `husky` and `lint-staged` for pre-commit checks.
 
 ![Tech Stack](assets/readme/headers/tech-stack.svg)
-
-## 💻 Tech Stack
 
 - **Language:** `TypeScript` — Typed superset of JavaScript with static type checking and modern syntax.
 - **Build Tool:** `tsup` — Fast bundler based on esbuild, supporting ESM, CommonJS, and type declaration outputs.
@@ -42,8 +38,6 @@
 See the [package.json](./package.json) for a full list of dependencies.
 
 ![Getting Started](assets/readme/headers/getting-started.svg)
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -72,8 +66,6 @@ See the [package.json](./package.json) for a full list of dependencies.
 
 ![Project Structure](assets/readme/headers/project-structure.svg)
 
-## 📁 Project Structure
-
 ```
 ├── bin/                  # CLI entry points
 │   ├── run               # Production entry script
@@ -91,8 +83,6 @@ See the [package.json](./package.json) for a full list of dependencies.
 
 ![Contributing](assets/readme/headers/contributing.svg)
 
-## 🤝 Contributing
-
 Contributions are welcome and greatly appreciated! Please follow these steps to contribute:
 
 1. Fork the repository
@@ -102,8 +92,6 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 5. Open a Pull Request
 
 ![License](assets/readme/headers/license.svg)
-
-## 📄 License
 
 MIT License © 2025 Trapar Waves
 
