@@ -9,115 +9,96 @@
 
 ---
 
-[English](../README.md) | [中文](/readme/README-CN.md) | [Русский язык](/readme/README-RU.md)
+[English](../README.md) | [中文](./README-CN.md) | [Русский язык](./README-RU.md)
 
-> 現代的なツールを搭載したCLI開発テンプレートで、TypeScript、tsupビルドツール、consolaログシステム、その他のコアコンポーネントを統合し、高品質なCLIプロジェクトのセットアップを加速します。
+> モダンなツールチェーンを活用した CLI 開発テンプレート。TypeScript、tsup ビルドツール、consola ロギングライブラリなどのコアコンポーネントを統合し、高品質な CLI プロジェクトのセットアップを加速します。
 
 ## ✨ 特徴
 
-- **CLIツールチェーン:** `ts-node`（開発中のTypeScript直接実行）と`tsup`（本番級ビルド）を統合し、デバッグからデプロイまでのフルワークフローをサポート。
-- **TypeScriptサポート:** 型チェックとオートコンプリート機能を備えた完全なTypeScript設定（`tsconfig.json`を含む）で、コードの保守性を確保。
-- **構造化ロギング:** `consola`を介したレベル付きロギング（info/warn/error）、カスタムフォーマット、コンテキスト対応メッセージを実装し、デバッグ効率を向上。
-- **データ解析:** `destr`を組み込み、JSONライクデータ（CLI引数、設定ファイルなど）を安全に解析し、`JSON.parse`による例外を防止。
-- **ターミナルスタイリング:** 軽量な`picocolors`を使用してクロスプラットフォームのターミナルカラーサポート（160+カラーコード）とスタイル（太字/下線）を実現し、CLIのインタラクティビティを向上。
-- **コード品質:** `@antfu/eslint-config`に基づくESLintを統合し、自動コードスタイルチェック、エラー検出、ベストプラクティスの適用を実現。
-- **高速ビルド:** `tsup`のデフォルト設定はESM出力、ソースマップ、型宣言生成をサポートし、従来のツールより30%以上高速なビルドを実現。
+- **CLI ツールチェーン：** `ts-node`（開発時の TypeScript 直接実行用）と `tsup`（プロダクションビルド用）を統合し、デバッグからデプロイまでのフルワークフローをサポート。
+- **TypeScript サポート：** `tsconfig.json` を含む完全な TypeScript 設定。型チェックと自動補完により、コードの保守性を確保。
+- **構造化ログ：** `consola` を使用したレベル付きログ（info/warn/error）、カスタムフォーマット、コンテキスト対応メッセージでデバッグ効率を向上。
+- **データパース：** 組み込みの `destr` で JSON ライクなデータ（CLI 引数、設定ファイルなど）を安全にパースし、`JSON.parse` の例外を防止。
+- **ターミナルスタイリング：** 軽量な `picocolors` でクロスプラットフォームのターミナルカラー（160+ カラーコード）とスタイル（太字/下線）をサポートし、CLI のインタラクティビティを向上。
+- **コード品質：** ESLint（`@antfu/eslint-config` ベース）を統合し、コードスタイルの自動チェック、エラー検出、ベストプラクティスの適用を実現。
+- **Git Hooks：** `husky` と `lint-staged` を統合し、コミット前チェックを実行。
 
 ## 💻 技術スタック
 
-- **言語:** `TypeScript`：静的型チェックと現代的な構文を備えたJavaScriptの型付きスーパーセット。
-- **ビルドツール:** `tsup`：esbuildに基づく高速バンドラーで、ESM、CommonJS、型宣言出力をサポート。
-- **ロギング:** `consola`：レベル付きメッセージ、カスタムテーマ、コンテキストサポートを備えた構造化ロギングライブラリ。
-- **データ処理:** `destr`：JSONライク文字列（CLI引数など）の安全なパーサーで、`JSON.parse`エラーを防止。
-- **ターミナルスタイリング:** `picocolors`：160+カラーコードとスタイル（太字/下線）を備えた軽量クロスプラットフォームターミナルカラーライブラリ。
-- **コードリンティング:** `ESLint` + `@antfu/eslint-config`：スタイルとエラー問題の自動修正機能を備えた現代的なJavaScript/TypeScriptリンティングルール。
-- **パッケージマネージャー:** `pnpm`：コンテンツアドレサブルパッケージマネージャーで、インストールが高速でディスク使用量が削減（`pnpm-lock.yaml`を参照）。
+- **言語：** `TypeScript` — 静的型チェックとモダンな構文を備えた JavaScript の型付きスーパーセット。
+- **ビルドツール：** `tsup` — esbuild ベースの高速バンドラー。ESM、CommonJS、型宣言出力をサポート。
+- **ロギング：** `consola` — レベル付きメッセージ、カスタムテーマ、コンテキストサポートを備えた構造化ロギングライブラリ。
+- **データ処理：** `destr` — JSON ライクな文字列（CLI 引数など）の安全なパーサー。`JSON.parse` エラーを防止。
+- **ターミナルスタイリング：** `picocolors` — 160+ カラーコードとスタイル（太字/下線）を備えた軽量クロスプラットフォームターミナルカラーライブラリ。
+- **コードリント：** `ESLint` + `@antfu/eslint-config` — スタイルとエラー問題の自動修正を備えたモダンな JavaScript/TypeScript リントルール。
+- **パッケージマネージャー：** `pnpm` — 高速インストールとディスク使用量削減を実現するコンテンツアドレス型パッケージマネージャー。
 
-依存関係の完全なリストについては[package.json](package.json)を参照してください。
+依存関係の完全なリストは [package.json](../package.json) を参照してください。
 
-## 🚀 始め方
-
-以下の手順に従ってプロジェクトをローカルで実行してください。
+## 🚀 はじめに
 
 ### 前提条件
 
-以下がインストールされていることを確認してください：
-
-- Node.js (推奨バージョン >= 18.x)
-- パッケージマネージャー (npm, yarn または pnpm)
-
-```bash
-node -v
-npm -v
-```
+- Node.js（>= 18.x 推奨）
+- パッケージマネージャー（npm、yarn、または pnpm）
 
 ### インストール
 
-`create-trapar-waves` を使用して新しいプロジェクトの足場を構築する:
+1. テンプレートを使用して新しいプロジェクトを作成：
 
-```bash
-pnpm create trapar-waves
-```
-
-または、手動でテンプレートをセットアップする場合:
-
-1. リポジトリをクローン:
    ```bash
-   git clone https://github.com/Trapar-waves/cli-template.git
-   cd cli-template
+   pnpm create trapar-waves
    ```
-2. 依存関係をインストール:
+
+2. プロジェクトディレクトリに移動し、依存関係をインストール：
+
    ```bash
    pnpm install
-   # or
-   npm install
-   # or
-   yarn install
    ```
 
-### 開発
+3. 開発サーバーを起動：
 
-`ts-node` を使用して開発モードで CLI を実行:
-```bash
-pnpm start
-# or
-npm run start
+   ```bash
+   pnpm start
+   ```
+
+## 📁 プロジェクト構造
+
+```
+├── bin/                  # CLI エントリーポイント
+│   ├── run               # 本番エントリースクリプト
+│   └── run.ts            # 開発エントリースクリプト
+├── src/                  # ソースコード
+│   ├── index.ts          # メインアプリケーションロジック
+│   └── logger.ts         # ロガー設定（consola）
+├── dist/                 # コンパイル出力（tsup で生成）
+├── tsconfig.json         # TypeScript 設定
+├── eslint.config.mjs     # ESLint 設定
+├── lint-staged.config.js # Lint-staged 設定
+├── renovate.json         # Renovate ボット設定
+└── package.json          # プロジェクトの依存関係とスクリプト
 ```
 
-### ビルド
+## 🤝 コントリビュート
 
-`tsup` を使用して本番用 CLI をビルド:
-```bash
-pnpm build
-# or
-npm run build
-```
+コントリビュートを歓迎します！以下の手順に従ってコントリビュートしてください：
 
-これにより、コンパイルされた JavaScript が `dist` ディレクトリに出力されます。
-
-## 🤝 コントリビューション
-
-貢献は歓迎され、非常に高く評価されています！貢献するには以下の手順に従ってください：
-
-1. リポジトリをフォークする
-2. 機能ブランチを作成する（`git checkout -b feature/amazing-feature`）
-3. 変更をコミットする（`git commit -m 'Add some amazing feature'`）
-4. ブランチにプッシュする（`git push origin feature/amazing-feature`）
-5. Pull Requestを開く
-
-コミットする前に、`pnpm lint` を実行してコードがプロジェクトの linting ルールに準拠していることを確認してください。
-
-## 👤 Author
-
-- **Rikka:** (admin@rikka.cc)
-- **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+1. リポジトリをフォーク
+2. 機能ブランチを作成（`git checkout -b feature/amazing-feature`）
+3. 変更をコミット（`git commit -m 'Add some amazing feature'`）
+4. ブランチにプッシュ（`git push origin feature/amazing-feature`）
+5. Pull Request を作成
 
 ## 📄 ライセンス
 
-このプロジェクトは MIT ライセンスの下でライセンスされています - 詳細については [LICENSE](../LICENSE) ファイルを参照してください。
+MIT License © 2025 Trapar Waves
 
-## 🔗 Links
+## 👤 作者
 
-- **リポジトリ:** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
-- **ホームページ:** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
-- **イシュー:** [https://github.com/Trapar-waves/cli-template/issues](https://github.com/Trapar-waves/cli-template/issues)
+- **Rikka：** [admin@rikka.cc](mailto:admin@rikka.cc)
+- **GitHub プロフィール：** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+
+## 🔗 リンク
+
+- **リポジトリ：** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
+- **Issues：** [https://github.com/Trapar-waves/cli-template/issues](https://github.com/Trapar-waves/cli-template/issues)

@@ -9,115 +9,96 @@
 
 ---
 
-[English](../README.md) | [日本語](/readme/README-JP.md) | [Русский язык](/readme/README-RU.md)
+[English](../README.md) | [日本語](./README-JP.md) | [Русский язык](./README-RU.md)
 
-> 一个由现代工具驱动的CLI开发模板，集成TypeScript、tsup构建工具、consola日志系统以及其他核心组件，加速高质量CLI项目的搭建。
+> 一个基于现代工具链的 CLI 开发模板，集成了 TypeScript、tsup 构建工具、consola 日志库等核心组件，加速高质量 CLI 项目的搭建。
 
 ## ✨ 特性
 
-- **CLI工具链:** 集成`ts-node`（开发时直接执行TypeScript）和`tsup`（生产级构建），支持从调试到部署的完整工作流。
-- **TypeScript支持:** 完整的TypeScript配置（包括`tsconfig.json`），带有类型检查和自动补全功能，确保代码可维护性。
-- **结构化日志:** 通过`consola`实现分级日志（info/warn/error）、自定义格式化和上下文感知消息，提高调试效率。
-- **数据解析:** 内置`destr`用于安全解析类JSON数据（如CLI参数、配置文件），防止`JSON.parse`抛出异常。
-- **终端样式:** 使用轻量级`picocolors`提供跨平台终端颜色支持（160+颜色代码）和样式（粗体/下划线），增强CLI交互性。
-- **代码质量:** 集成ESLint（基于`@antfu/eslint-config`）实现自动化代码风格检查、错误检测和最佳实践执行。
-- **快速构建:** `tsup`默认配置支持ESM输出、源映射和类型声明生成，构建速度比传统工具快30%以上。
+- **CLI 工具链：** 集成 `ts-node`（用于开发时直接执行 TypeScript）和 `tsup`（用于生产级构建），支持从调试到部署的完整工作流。
+- **TypeScript 支持：** 完整的 TypeScript 配置（包括 `tsconfig.json`），提供类型检查和自动补全，确保代码可维护性。
+- **结构化日志：** 通过 `consola` 实现分级日志（info/warn/error）、自定义格式化和上下文感知消息，提升调试效率。
+- **数据解析：** 内置 `destr`，安全解析类 JSON 数据（如 CLI 参数、配置文件），防止 `JSON.parse` 异常。
+- **终端样式：** 使用轻量级 `picocolors` 提供跨平台终端颜色支持（160+ 颜色代码）和样式（粗体/下划线），提升 CLI 交互体验。
+- **代码质量：** 集成 ESLint（基于 `@antfu/eslint-config`），自动检查代码风格、检测错误并强制执行最佳实践。
+- **Git Hooks：** 集成 `husky` 和 `lint-staged`，在提交前自动执行检查。
 
 ## 💻 技术栈
 
-- **语言:** `TypeScript`：JavaScript的类型化超集，具有静态类型检查和现代语法。
-- **构建工具:** `tsup`：基于esbuild的快速打包器，支持ESM、CommonJS和类型声明输出。
-- **日志系统:** `consola`：具有分级消息、自定义主题和上下文支持的结构化日志库。
-- **数据处理:** `destr`：用于类JSON字符串（如CLI参数）的安全解析器，防止`JSON.parse`错误。
-- **终端样式:** `picocolors`：轻量级跨平台终端颜色库，支持160+颜色代码和样式（粗体/下划线）。
-- **代码检查:** `ESLint` + `@antfu/eslint-config`：现代JavaScript/TypeScript检查规则，支持自动修复样式和错误问题。
-- **包管理器:** `pnpm`：内容寻址包管理器，安装速度更快，磁盘占用更少（参见`pnpm-lock.yaml`）。
+- **语言：** `TypeScript` — JavaScript 的类型超集，支持静态类型检查和现代语法。
+- **构建工具：** `tsup` — 基于 esbuild 的快速打包工具，支持 ESM、CommonJS 和类型声明输出。
+- **日志库：** `consola` — 结构化日志库，支持分级消息、自定义主题和上下文。
+- **数据处理：** `destr` — 安全的类 JSON 字符串解析器（如 CLI 参数），防止 `JSON.parse` 错误。
+- **终端样式：** `picocolors` — 轻量级跨平台终端颜色库，支持 160+ 颜色代码和样式（粗体/下划线）。
+- **代码检查：** `ESLint` + `@antfu/eslint-config` — 现代 JavaScript/TypeScript 检查规则，支持自动修复。
+- **包管理器：** `pnpm` — 内容寻址的包管理器，安装更快，磁盘占用更少。
 
-完整依赖列表参见[package.json](package.json)。
+查看 [package.json](../package.json) 获取完整的依赖列表。
 
-## 🚀 开始使用
+## 🚀 快速开始
 
-按照以下说明在本地运行项目。
+### 前置条件
 
-### 前提条件
+- Node.js（推荐 >= 18.x）
+- 包管理器（npm、yarn 或 pnpm）
 
-确保已安装以下软件：
+### 安装
 
-- Node.js (推荐 >= 18.x 版本)
-- 包管理器 (npm, yarn 或 pnpm)
+1. 使用模板创建新项目：
 
-```bash
-node -v
-npm -v
-```
-
-### 安装步骤
-
-使用 `create-trapar-waves` 脚手架创建新项目：
-
-```bash
-pnpm create trapar-waves
-```
-
-或者，如果您更喜欢手动设置模板：
-
-1. 克隆仓库：
    ```bash
-   git clone https://github.com/Trapar-waves/cli-template.git
-   cd cli-template
+   pnpm create trapar-waves
    ```
-2. 安装依赖：
+
+2. 导航到项目目录并安装依赖：
+
    ```bash
    pnpm install
-   # or
-   npm install
-   # or
-   yarn install
    ```
 
-### 开发
+3. 启动开发服务器：
 
-使用 `ts-node` 在开发模式下运行 CLI：
-```bash
-pnpm start
-# or
-npm run start
+   ```bash
+   pnpm start
+   ```
+
+## 📁 项目结构
+
+```
+├── bin/                  # CLI 入口点
+│   ├── run               # 生产入口脚本
+│   └── run.ts            # 开发入口脚本
+├── src/                  # 源代码
+│   ├── index.ts          # 主应用逻辑
+│   └── logger.ts         # 日志配置（consola）
+├── dist/                 # 编译输出（由 tsup 生成）
+├── tsconfig.json         # TypeScript 配置
+├── eslint.config.mjs     # ESLint 配置
+├── lint-staged.config.js # Lint-staged 配置
+├── renovate.json         # Renovate 机器人配置
+└── package.json          # 项目依赖和脚本
 ```
 
-### 构建
+## 🤝 贡献
 
-使用 `tsup` 构建生产版本的 CLI：
-```bash
-pnpm build
-# or
-npm run build
-```
+欢迎贡献，非常感谢！请按照以下步骤贡献：
 
-这会将编译后的 JavaScript 输出到 `dist` 目录。
-
-## 🤝 贡献指南
-
-欢迎贡献，非常感谢您的支持！请按照以下步骤进行贡献：
-
-1. Fork 本仓库
-2. 创建功能分支（`git checkout -b feature/amazing-feature`）
-3. 提交您的更改（`git commit -m 'Add some amazing feature'`）
+1. Fork 仓库
+2. 创建特性分支（`git checkout -b feature/amazing-feature`）
+3. 提交更改（`git commit -m 'Add some amazing feature'`）
 4. 推送到分支（`git push origin feature/amazing-feature`）
-5. 打开Pull Request
-
-请在提交前确保您的代码符合项目的 linting 规则，可以通过运行 `pnpm lint` 来检查。
-
-## 👤 Author
-
-- **Rikka:** (admin@rikka.cc)
-- **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+5. 创建 Pull Request
 
 ## 📄 许可证
 
-该项目采用 MIT 许可证授权 - 详见 [LICENSE](../LICENSE) 文件了解详情。
+MIT License © 2025 Trapar Waves
 
-## 🔗 Links
+## 👤 作者
 
-- **仓库:** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
-- **主页:** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
-- **问题:** [https://github.com/Trapar-waves/cli-template/issues](https://github.com/Trapar-waves/cli-template/issues)
+- **Rikka：** [admin@rikka.cc](mailto:admin@rikka.cc)
+- **GitHub 主页：** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+
+## 🔗 链接
+
+- **仓库：** [https://github.com/Trapar-waves/cli-template](https://github.com/Trapar-waves/cli-template)
+- **Issues：** [https://github.com/Trapar-waves/cli-template/issues](https://github.com/Trapar-waves/cli-template/issues)
