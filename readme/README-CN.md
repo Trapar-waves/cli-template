@@ -13,6 +13,10 @@
 
 > 一个基于现代工具链的 CLI 开发模板，集成了 TypeScript、tsup 构建工具、consola 日志库等核心组件，加速高质量 CLI 项目的搭建。
 
+![cli-template hero](../assets/readme/hero.svg)
+
+![Features](../assets/readme/headers/features.svg)
+
 ## ✨ 特性
 
 - **CLI 工具链：** 集成 `ts-node`（用于开发时直接执行 TypeScript）和 `tsup`（用于生产级构建），支持从调试到部署的完整工作流。
@@ -22,6 +26,8 @@
 - **终端样式：** 使用轻量级 `picocolors` 提供跨平台终端颜色支持（160+ 颜色代码）和样式（粗体/下划线），提升 CLI 交互体验。
 - **代码质量：** 集成 ESLint（基于 `@antfu/eslint-config`），自动检查代码风格、检测错误并强制执行最佳实践。
 - **Git Hooks：** 集成 `husky` 和 `lint-staged`，在提交前自动执行检查。
+
+![Tech Stack](../assets/readme/headers/tech-stack.svg)
 
 ## 💻 技术栈
 
@@ -34,6 +40,8 @@
 - **包管理器：** `pnpm` — 内容寻址的包管理器，安装更快，磁盘占用更少。
 
 查看 [package.json](../package.json) 获取完整的依赖列表。
+
+![Getting Started](../assets/readme/headers/getting-started.svg)
 
 ## 🚀 快速开始
 
@@ -62,6 +70,8 @@
    pnpm start
    ```
 
+![Project Structure](../assets/readme/headers/project-structure.svg)
+
 ## 📁 项目结构
 
 ```
@@ -79,6 +89,8 @@
 └── package.json          # 项目依赖和脚本
 ```
 
+![Contributing](../assets/readme/headers/contributing.svg)
+
 ## 🤝 贡献
 
 欢迎贡献，非常感谢！请按照以下步骤贡献：
@@ -88,6 +100,8 @@
 3. 提交更改（`git commit -m 'Add some amazing feature'`）
 4. 推送到分支（`git push origin feature/amazing-feature`）
 5. 创建 Pull Request
+
+![License](../assets/readme/headers/license.svg)
 
 ## 📄 许可证
 

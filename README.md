@@ -13,6 +13,10 @@
 
 > A CLI development template powered by modern tooling, integrating TypeScript, tsup for builds, consola for logging, and other core components to accelerate high-quality CLI project setup.
 
+![cli-template hero](assets/readme/hero.svg)
+
+![Features](assets/readme/headers/features.svg)
+
 ## ✨ Features
 
 - **CLI Toolchain:** Integrates `ts-node` (for direct TypeScript execution during development) and `tsup` (for production-grade builds), supporting the full workflow from debugging to deployment.
@@ -22,6 +26,8 @@
 - **Terminal Styling:** Uses lightweight `picocolors` for cross-platform terminal color support (160+ color codes) and styles (bold/underline) to improve CLI interactivity.
 - **Code Quality:** Integrated ESLint (based on `@antfu/eslint-config`) for automated code style checks, error detection, and best practice enforcement.
 - **Git Hooks:** Integrated `husky` and `lint-staged` for pre-commit checks.
+
+![Tech Stack](assets/readme/headers/tech-stack.svg)
 
 ## 💻 Tech Stack
 
@@ -34,6 +40,8 @@
 - **Package Manager:** `pnpm` — Content-addressable package manager with faster installs and reduced disk usage.
 
 See the [package.json](./package.json) for a full list of dependencies.
+
+![Getting Started](assets/readme/headers/getting-started.svg)
 
 ## 🚀 Getting Started
 
@@ -62,6 +70,8 @@ See the [package.json](./package.json) for a full list of dependencies.
    pnpm start
    ```
 
+![Project Structure](assets/readme/headers/project-structure.svg)
+
 ## 📁 Project Structure
 
 ```
@@ -79,6 +89,8 @@ See the [package.json](./package.json) for a full list of dependencies.
 └── package.json          # Project dependencies and scripts
 ```
 
+![Contributing](assets/readme/headers/contributing.svg)
+
 ## 🤝 Contributing
 
 Contributions are welcome and greatly appreciated! Please follow these steps to contribute:
@@ -88,6 +100,8 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+![License](assets/readme/headers/license.svg)
 
 ## 📄 License
 

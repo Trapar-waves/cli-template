@@ -13,6 +13,10 @@
 
 > モダンなツールチェーンを活用した CLI 開発テンプレート。TypeScript、tsup ビルドツール、consola ロギングライブラリなどのコアコンポーネントを統合し、高品質な CLI プロジェクトのセットアップを加速します。
 
+![cli-template hero](../assets/readme/hero.svg)
+
+![Features](../assets/readme/headers/features.svg)
+
 ## ✨ 特徴
 
 - **CLI ツールチェーン：** `ts-node`（開発時の TypeScript 直接実行用）と `tsup`（プロダクションビルド用）を統合し、デバッグからデプロイまでのフルワークフローをサポート。
@@ -22,6 +26,8 @@
 - **ターミナルスタイリング：** 軽量な `picocolors` でクロスプラットフォームのターミナルカラー（160+ カラーコード）とスタイル（太字/下線）をサポートし、CLI のインタラクティビティを向上。
 - **コード品質：** ESLint（`@antfu/eslint-config` ベース）を統合し、コードスタイルの自動チェック、エラー検出、ベストプラクティスの適用を実現。
 - **Git Hooks：** `husky` と `lint-staged` を統合し、コミット前チェックを実行。
+
+![Tech Stack](../assets/readme/headers/tech-stack.svg)
 
 ## 💻 技術スタック
 
@@ -34,6 +40,8 @@
 - **パッケージマネージャー：** `pnpm` — 高速インストールとディスク使用量削減を実現するコンテンツアドレス型パッケージマネージャー。
 
 依存関係の完全なリストは [package.json](../package.json) を参照してください。
+
+![Getting Started](../assets/readme/headers/getting-started.svg)
 
 ## 🚀 はじめに
 
@@ -62,6 +70,8 @@
    pnpm start
    ```
 
+![Project Structure](../assets/readme/headers/project-structure.svg)
+
 ## 📁 プロジェクト構造
 
 ```
@@ -79,6 +89,8 @@
 └── package.json          # プロジェクトの依存関係とスクリプト
 ```
 
+![Contributing](../assets/readme/headers/contributing.svg)
+
 ## 🤝 コントリビュート
 
 コントリビュートを歓迎します！以下の手順に従ってコントリビュートしてください：
@@ -88,6 +100,8 @@
 3. 変更をコミット（`git commit -m 'Add some amazing feature'`）
 4. ブランチにプッシュ（`git push origin feature/amazing-feature`）
 5. Pull Request を作成
+
+![License](../assets/readme/headers/license.svg)
 
 ## 📄 ライセンス
 
