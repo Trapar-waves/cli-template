@@ -32,20 +32,20 @@ my-awesome-cli
 
 ![Features](assets/readme/headers/features.svg)
 
-### What You Get Out of the Box
+## What You Get Out of the Box
 
-| Feature | Tool | What It Does |
-|---------|------|-------------|
-| **Type Safety** | TypeScript | Full type checking with modern ES syntax, preventing runtime errors before they happen |
-| **Fast Builds** | tsup | esbuild-powered bundler — produces a single optimized CJS file in milliseconds |
-| **Structured Logging** | consola | Leveled logging (info/warn/error), interactive prompts, and beautiful terminal output |
-| **Safe Parsing** | destr | Parse CLI arguments and config files without worrying about `JSON.parse` throwing |
-| **Terminal Colors** | picocolors | Cross-platform colored output with 160+ codes — zero dependencies, maximum speed |
-| **Code Quality** | ESLint + @antfu/eslint-config | Opinionated linting with auto-fix, covering TypeScript, JSON, Markdown, and YAML |
-| **Git Hooks** | husky + lint-staged | Pre-commit lint checks — your code is always clean before it reaches the repo |
-| **CI/CD Ready** | GitHub Actions | Automated npm publishing and changelog generation on version tags |
+| Feature                | Tool                          | What It Does                                                                           |
+| ---------------------- | ----------------------------- | -------------------------------------------------------------------------------------- |
+| **Type Safety**        | TypeScript                    | Full type checking with modern ES syntax, preventing runtime errors before they happen |
+| **Fast Builds**        | tsup                          | esbuild-powered bundler — produces a single optimized CJS file in milliseconds         |
+| **Structured Logging** | consola                       | Leveled logging (info/warn/error), interactive prompts, and beautiful terminal output  |
+| **Safe Parsing**       | destr                         | Parse CLI arguments and config files without worrying about `JSON.parse` throwing      |
+| **Terminal Colors**    | picocolors                    | Cross-platform colored output with 160+ codes — zero dependencies, maximum speed       |
+| **Code Quality**       | ESLint + @antfu/eslint-config | Opinionated linting with auto-fix, covering TypeScript, JSON, Markdown, and YAML       |
+| **Git Hooks**          | husky + lint-staged           | Pre-commit lint checks — your code is always clean before it reaches the repo          |
+| **CI/CD Ready**        | GitHub Actions                | Automated npm publishing and changelog generation on version tags                      |
 
-### Why This Template?
+## Why This Template?
 
 Most CLI starters give you a `console.log("hello")` and leave you to figure out the rest. This template gives you a **complete development environment**:
 
@@ -72,12 +72,12 @@ See [package.json](./package.json) for the full dependency list.
 
 ![Getting Started](assets/readme/headers/getting-started.svg)
 
-### Prerequisites
+## Prerequisites
 
 - **Node.js** >= 18.x
 - **pnpm** (recommended) or npm/yarn
 
-### Quick Start
+## Quick Start
 
 ```bash
 # 1. Create a new project from the template
@@ -93,17 +93,17 @@ pnpm install
 pnpm start
 ```
 
-### Available Scripts
+## Available Scripts
 
-| Script | Command | Description |
-|--------|---------|-------------|
-| `pnpm start` | `ts-node ./bin/run.ts` | Run the CLI in development mode (TypeScript, no build) |
-| `pnpm start:node` | `node ./bin/run` | Run the compiled production output |
-| `pnpm build` | `tsup-node` | Build for production → `dist/run.js` |
-| `pnpm build:watch` | `tsup-node --watch` | Build in watch mode for development |
-| `pnpm lint` | `eslint . --cache` | Run ESLint with auto-fix |
+| Script             | Command                | Description                                            |
+| ------------------ | ---------------------- | ------------------------------------------------------ |
+| `pnpm start`       | `ts-node ./bin/run.ts` | Run the CLI in development mode (TypeScript, no build) |
+| `pnpm start:node`  | `node ./bin/run`       | Run the compiled production output                     |
+| `pnpm build`       | `tsup-node`            | Build for production → `dist/run.js`                   |
+| `pnpm build:watch` | `tsup-node --watch`    | Build in watch mode for development                    |
+| `pnpm lint`        | `eslint . --cache`     | Run ESLint with auto-fix                               |
 
-### Build Output
+## Build Output
 
 ```bash
 $ pnpm build
@@ -142,7 +142,7 @@ cli-template/
 └── package.json               # Project metadata and scripts
 ```
 
-### Customization Guide
+## Customization Guide
 
 **Start here:** `src/index.ts` — replace the demo logic with your CLI implementation.
 

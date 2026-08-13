@@ -32,20 +32,20 @@ my-awesome-cli
 
 ![功能特性](../assets/readme/headers/cn/features.svg)
 
-### 开箱即用的能力
+## 开箱即用的能力
 
-| 特性 | 工具 | 说明 |
-|------|------|------|
-| **类型安全** | TypeScript | 完整的类型检查 + 现代 ES 语法，编译期捕获运行时错误 |
-| **极速构建** | tsup | 基于 esbuild 的打包器 —— 毫秒级生成单个优化 CJS 文件 |
-| **结构化日志** | consola | 分级日志（info/warn/error）、交互式提示、美观的终端输出 |
-| **安全解析** | destr | 解析 CLI 参数和配置文件，无需担心 `JSON.parse` 抛异常 |
-| **终端着色** | picocolors | 跨平台终端颜色输出，160+ 颜色代码，零依赖、极致性能 |
-| **代码规范** | ESLint + @antfu/eslint-config | 开箱即用的 lint 规则，覆盖 TypeScript、JSON、Markdown、YAML |
-| **Git Hooks** | husky + lint-staged | 提交前自动检查，确保代码入库前始终规范 |
-| **CI/CD 就绪** | GitHub Actions | 版本标签触发自动发布 npm + 生成 changelog |
+| 特性           | 工具                          | 说明                                                        |
+| -------------- | ----------------------------- | ----------------------------------------------------------- |
+| **类型安全**   | TypeScript                    | 完整的类型检查 + 现代 ES 语法，编译期捕获运行时错误         |
+| **极速构建**   | tsup                          | 基于 esbuild 的打包器 —— 毫秒级生成单个优化 CJS 文件        |
+| **结构化日志** | consola                       | 分级日志（info/warn/error）、交互式提示、美观的终端输出     |
+| **安全解析**   | destr                         | 解析 CLI 参数和配置文件，无需担心 `JSON.parse` 抛异常       |
+| **终端着色**   | picocolors                    | 跨平台终端颜色输出，160+ 颜色代码，零依赖、极致性能         |
+| **代码规范**   | ESLint + @antfu/eslint-config | 开箱即用的 lint 规则，覆盖 TypeScript、JSON、Markdown、YAML |
+| **Git Hooks**  | husky + lint-staged           | 提交前自动检查，确保代码入库前始终规范                      |
+| **CI/CD 就绪** | GitHub Actions                | 版本标签触发自动发布 npm + 生成 changelog                   |
 
-### 为什么选择这个模板？
+## 为什么选择这个模板？
 
 大多数 CLI 脚手架只给你一个 `console.log("hello")`，剩下的全靠自己。这个模板提供的是**完整的开发环境**：
 
@@ -72,12 +72,12 @@ Git Hooks  husky 9           Git 钩子管理
 
 ![快速开始](../assets/readme/headers/cn/getting-started.svg)
 
-### 环境要求
+## 环境要求
 
 - **Node.js** >= 18.x
 - **pnpm**（推荐）或 npm/yarn
 
-### 快速上手
+## 快速上手
 
 ```bash
 # 1. 从模板创建新项目
@@ -93,17 +93,17 @@ pnpm install
 pnpm start
 ```
 
-### 可用脚本
+## 可用脚本
 
-| 脚本 | 命令 | 说明 |
-|------|------|------|
-| `pnpm start` | `ts-node ./bin/run.ts` | 开发模式运行 CLI（TypeScript 直接执行，无需构建） |
-| `pnpm start:node` | `node ./bin/run` | 运行编译后的生产产物 |
-| `pnpm build` | `tsup-node` | 生产构建 → `dist/run.js` |
-| `pnpm build:watch` | `tsup-node --watch` | 监听模式构建，适合开发调试 |
-| `pnpm lint` | `eslint . --cache` | 运行 ESLint 检查 |
+| 脚本               | 命令                   | 说明                                              |
+| ------------------ | ---------------------- | ------------------------------------------------- |
+| `pnpm start`       | `ts-node ./bin/run.ts` | 开发模式运行 CLI（TypeScript 直接执行，无需构建） |
+| `pnpm start:node`  | `node ./bin/run`       | 运行编译后的生产产物                              |
+| `pnpm build`       | `tsup-node`            | 生产构建 → `dist/run.js`                          |
+| `pnpm build:watch` | `tsup-node --watch`    | 监听模式构建，适合开发调试                        |
+| `pnpm lint`        | `eslint . --cache`     | 运行 ESLint 检查                                  |
 
-### 构建产物
+## 构建产物
 
 ```bash
 $ pnpm build
@@ -142,7 +142,7 @@ cli-template/
 └── package.json               # 项目元数据和脚本
 ```
 
-### 自定义指南
+## 自定义指南
 
 **从这里开始：** `src/index.ts` —— 用你的 CLI 实现替换示例逻辑。
 
@@ -177,7 +177,6 @@ export async function run() {
 6. 创建 Pull Request
 
 > **提示：** 提交时 pre-commit 钩子会自动对暂存文件执行 lint 检查。
-
 
 ![开源协议](../assets/readme/headers/cn/license.svg)
 

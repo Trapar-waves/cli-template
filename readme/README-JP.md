@@ -32,20 +32,20 @@ my-awesome-cli
 
 ![機能](../assets/readme/headers/jp/features.svg)
 
-### 標準装備の機能
+## 標準装備の機能
 
-| 機能 | ツール | 説明 |
-|------|--------|------|
-| **型安全** | TypeScript | 完全な型チェック + モダン ES 構文、コンパイル時にランタイムエラーを検出 |
-| **高速ビルド** | tsup | esbuild ベースのバンドラー — ミリ秒単位で最適化された CJS ファイルを生成 |
-| **構造化ログ** | consola | レベル付きログ（info/warn/error）、インタラクティブプロンプト、美しいターミナル出力 |
-| **安全なパース** | destr | CLI 引数や設定ファイルを安全にパース、`JSON.parse` の例外を心配する必要なし |
-| **ターミナルカラー** | picocolors | クロスプラットフォーム対応のターミナルカラー、160+ カラーコード、ゼロ依存 |
-| **コード品質** | ESLint + @antfu/eslint-config | TypeScript、JSON、Markdown、YAML をカバーする即効性のある lint ルール |
-| **Git Hooks** | husky + lint-staged | コミット前に自動チェック、リポジトリに常にクリーンなコードを保証 |
-| **CI/CD 対応** | GitHub Actions | バージョンタグで npm 自動公開 + changelog 生成 |
+| 機能                 | ツール                        | 説明                                                                                |
+| -------------------- | ----------------------------- | ----------------------------------------------------------------------------------- |
+| **型安全**           | TypeScript                    | 完全な型チェック + モダン ES 構文、コンパイル時にランタイムエラーを検出             |
+| **高速ビルド**       | tsup                          | esbuild ベースのバンドラー — ミリ秒単位で最適化された CJS ファイルを生成            |
+| **構造化ログ**       | consola                       | レベル付きログ（info/warn/error）、インタラクティブプロンプト、美しいターミナル出力 |
+| **安全なパース**     | destr                         | CLI 引数や設定ファイルを安全にパース、`JSON.parse` の例外を心配する必要なし         |
+| **ターミナルカラー** | picocolors                    | クロスプラットフォーム対応のターミナルカラー、160+ カラーコード、ゼロ依存           |
+| **コード品質**       | ESLint + @antfu/eslint-config | TypeScript、JSON、Markdown、YAML をカバーする即効性のある lint ルール               |
+| **Git Hooks**        | husky + lint-staged           | コミット前に自動チェック、リポジトリに常にクリーンなコードを保証                    |
+| **CI/CD 対応**       | GitHub Actions                | バージョンタグで npm 自動公開 + changelog 生成                                      |
 
-### なぜこのテンプレートなのか？
+## なぜこのテンプレートなのか？
 
 多くの CLI スターターは `console.log("hello")` を渡すだけで、あとは全て自力で解決する必要があります。このテンプレートが提供するのは**完全な開発環境**です：
 
@@ -72,12 +72,12 @@ Git Hooks  husky 9           Git フック管理
 
 ![はじめに](../assets/readme/headers/jp/getting-started.svg)
 
-### 前提条件
+## 前提条件
 
 - **Node.js** >= 18.x
 - **pnpm**（推奨）または npm/yarn
 
-### クイックスタート
+## クイックスタート
 
 ```bash
 # 1. テンプレートから新しいプロジェクトを作成
@@ -93,17 +93,17 @@ pnpm install
 pnpm start
 ```
 
-### 利用可能なスクリプト
+## 利用可能なスクリプト
 
-| スクリプト | コマンド | 説明 |
-|-----------|---------|------|
-| `pnpm start` | `ts-node ./bin/run.ts` | 開発モードで CLI を実行（TypeScript 直接実行、ビルド不要） |
-| `pnpm start:node` | `node ./bin/run` | コンパイル済みのプロダクション出力を実行 |
-| `pnpm build` | `tsup-node` | プロダクションビルド → `dist/run.js` |
-| `pnpm build:watch` | `tsup-node --watch` | ウォッチモードでビルド、開発デバッグに最適 |
-| `pnpm lint` | `eslint . --cache` | ESLint チェックを実行 |
+| スクリプト         | コマンド               | 説明                                                       |
+| ------------------ | ---------------------- | ---------------------------------------------------------- |
+| `pnpm start`       | `ts-node ./bin/run.ts` | 開発モードで CLI を実行（TypeScript 直接実行、ビルド不要） |
+| `pnpm start:node`  | `node ./bin/run`       | コンパイル済みのプロダクション出力を実行                   |
+| `pnpm build`       | `tsup-node`            | プロダクションビルド → `dist/run.js`                       |
+| `pnpm build:watch` | `tsup-node --watch`    | ウォッチモードでビルド、開発デバッグに最適                 |
+| `pnpm lint`        | `eslint . --cache`     | ESLint チェックを実行                                      |
 
-### ビルド出力
+## ビルド出力
 
 ```bash
 $ pnpm build
@@ -142,7 +142,7 @@ cli-template/
 └── package.json               # プロジェクトメタデータとスクリプト
 ```
 
-### カスタマイズガイド
+## カスタマイズガイド
 
 **ここから始めましょう：** `src/index.ts` —— デモロジックをあなたの CLI 実装に置き換えます。
 

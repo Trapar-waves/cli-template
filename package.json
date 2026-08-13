@@ -1,7 +1,7 @@
 {
   "name": "@trapar-waves/cli-template",
   "version": "1.1.23",
-  "packageManager": "pnpm@10.30.0",
+  "packageManager": "pnpm@11.21.0",
   "description": "A CLI template with TypeScript, tsup, consola, destr, and picocolors, offering efficient builds, logging, data parsing, and colorful output, with ESLint for quality.",
   "author": {
     "email": "admin@rikka.cc",
@@ -47,13 +47,13 @@
     "picocolors": "^1.1.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.4.3",
-    "eslint": "^10.0.0",
-    "eslint-plugin-format": "^1.4.0",
+    "@antfu/eslint-config": "^9.3.0",
+    "eslint": "^10.8.1",
+    "eslint-plugin-format": "^2.0.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^17.3.0",
     "ts-node": "^10.9.2",
-    "tsup": "^8.5.1",
+    "tsup": "^8.3.6",
     "typescript": "^5.9.3"
   }
 }
