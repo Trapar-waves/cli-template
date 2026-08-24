@@ -1,15 +1,8 @@
-import { antfu } from "@antfu/eslint-config";
+import { renton } from "@renton/eslint-config";
 
-export default antfu({
+export default renton({
   stylistic: {
     quotes: "double",
     semi: true,
-  },
-  markdown: true,
-  jsonc: true,
-  typescript: true,
-  yaml: true,
-  formatters: {
-    markdown: "prettier",
   },
 });

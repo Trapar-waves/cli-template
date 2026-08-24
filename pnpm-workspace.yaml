@@ -2,7 +2,12 @@ shellEmulator: true
 
 trustPolicy: no-downgrade
 
+overrides:
+  chokidar: 5.0.0
+
 allowBuilds:
   esbuild: true
 onlyBuiltDependencies:
   - esbuild
+minimumReleaseAgeExclude:
+  - '@renton/eslint-config@0.1.2'
