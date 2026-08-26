@@ -47,7 +47,7 @@
     "picocolors": "^1.1.1"
   },
   "devDependencies": {
-    "@renton/eslint-config": "^0.2.0",
+    "@renton/eslint-config": "^1.0.0",
     "eslint": "^10.9.1",
     "eslint-plugin-format": "^2.0.1",
     "husky": "^9.1.7",
