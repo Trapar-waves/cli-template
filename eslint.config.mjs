@@ -1,20 +1,20 @@
 import { renton } from "@renton/eslint-config";
 
 export default renton({
+  formatters: {
+    markdown: "prettier",
+  },
+  jsonc: true,
+  markdown: true,
   stylistic: {
     quotes: "double",
     semi: true,
   },
-  markdown: true,
-  jsonc: true,
   typescript: true,
   yaml: true,
-  formatters: {
-    markdown: "prettier",
-  },
 }, {
-  name: "trapar/pnpm-workspace-yaml-trust-policy",
   files: ["pnpm-workspace.yaml"],
+  name: "trapar/pnpm-workspace-yaml-trust-policy",
   rules: {
     "pnpm/yaml-enforce-settings": "off",
   },
