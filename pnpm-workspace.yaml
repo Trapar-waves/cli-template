@@ -1,12 +1,7 @@
 shellEmulator: true
 
-trustPolicy: no-downgrade
+trustPolicy: off
 
-overrides:
-  chokidar: 5.0.0
-
-allowBuilds:
-  esbuild: true
 onlyBuiltDependencies:
   - esbuild
 minimumReleaseAgeExclude:
