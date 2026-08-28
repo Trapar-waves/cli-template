@@ -1,8 +1,15 @@
 shellEmulator: true
 
 trustPolicy: off
-
-onlyBuiltDependencies:
-  - esbuild
 minimumReleaseAgeExclude:
   - '@renton/eslint-config@0.1.2'
+  - lint-staged@17.4.1
+allowBuilds:
+  '0': e
+  '1': s
+  '2': b
+  '3': u
+  '4': i
+  '5': l
+  '6': d
+  esbuild: true
