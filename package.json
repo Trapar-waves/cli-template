@@ -1,6 +1,6 @@
 {
   "name": "@trapar-waves/cli-template",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "packageManager": "pnpm@11.24.0",
   "description": "A CLI template with TypeScript, tsup, consola, destr, and picocolors, offering efficient builds, logging, data parsing, and colorful output, with ESLint for quality.",
   "author": {
